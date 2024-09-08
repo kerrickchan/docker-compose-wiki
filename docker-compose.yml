@@ -1,0 +1,13 @@
+services:
+  db:
+    extends:
+      file: docker-compose-wiki.yml
+      service: db
+
+  wiki:
+    extends:
+      file: docker-compose-wiki.yml
+      service: wiki
+
+volumes:
+  db-data:
